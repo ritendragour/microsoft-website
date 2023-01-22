@@ -105,18 +105,22 @@ nav ul li {
     justify-content: center;
 }
 .laptop-section{
-    margin: 0px 30px;
+    margin: 0px 60px;
     display: flex;
 }
-.laptop-section img{
-    width: 80%;
-    height: 100%;
-}
-.img_path_l{
+.img_path_loptop{
     display: flex;
     flex-direction: column;
-    align-items: left;
-    width: 25%;
+    /* align-items: left; */
+    justify-content: space-between;
+    /* width: %; */
+}
+.img_path_loptap button{
+    padding: 5px 10px;
+    background-color: #ffb900;
+    font-size: 15px;
+    color: black;
+    border: none;
 }
 @media(max-width:768px) {
     nav {
