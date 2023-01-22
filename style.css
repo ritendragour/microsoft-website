@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     font-family: 'Poppins', sans-serif;
 }
 nav {
@@ -24,9 +24,12 @@ nav {
     margin-right: 30px;
 }
 .left_header {
-    height: 100%;
+    width: 70%;
     display: flex;
     list-style: none;
+}
+.right_header{
+    width: 25%;
 }
 nav ul {
     display: flex;
@@ -65,7 +68,7 @@ nav ul li {
 .home p{
     padding: 20px 0px;
 }
-.home button{
+.home button ,.back button{
     margin-right: 50px;
     padding: 10px 20px;
     background-color:#0067b8;
@@ -105,29 +108,57 @@ nav ul li {
     justify-content: center;
 }
 .laptop-section{
-    margin: 0px 60px;
+    margin-left: 40px;
+    margin-right: 40px;
     display: flex;
-    flex-wrap: wrap;
-}
-.img_path_loptop{
-    display: flex;
-    flex-direction: column;
-    /* align-items: left; */
     justify-content: space-between;
-    /* width: %; */
 }
-.img_path_loptap button{
+.laptop{
+    width: 24%;
+}
+.laptop button{
     padding: 5px 10px;
     background-color: #ffb900;
     font-size: 15px;
     color: black;
     border: none;
 }
+.laptop button,.laptop h2,.laptop p,.laptop a{
+    margin: 10px 0px;
+}
+.laptop p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.laptop a{
+   margin-bottom: 20px;
+}
+.back{
+    background-image: url(./img/back2.webp);
+    background-position: center;
+    width: 89%;
+    height: 85vh;
+    margin: 70px;
+    background-size: cover;
+    padding: 200px 100px;
+}
+.back p{
+    margin: 10px 0px;
+    font-size: 16px;
+    font-weight: 400;
+}
 @media(max-width:768px) {
     nav {
         flex-direction: column;
         padding: 10px 10px;
         font-size: 25px;
+        width: 100%;
+    }
+    .left_header{
+        width: 50%;
+    }
+    .right_header{
+        width: 50%;
     }
     nav ul {
         display: none;
@@ -136,6 +167,7 @@ nav ul li {
         display: block;
     }
     .left_header {
+      
         width: 100%;
         justify-content: space-between;
         font-size: auto;
@@ -152,11 +184,39 @@ nav ul li {
     .home{
         background: none;
         justify-content: left;
-        padding: 50px;
+        padding: 0px;
+    }
+    .arrow_left_right{
+        display: none;
+    }
+    .back{
+        background: none;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
     }
 }
-/* @media(max-width:945px) {
-nav{
-    padding: 0px;
+@media(max-width:985px) {
+    nav{
+        padding: 0px;
+        margin: 0px;
+    }
 }
-} */
+@media(max-width:1331px) {
+    .laptop-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .laptop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+@media(max-width: 547px) {
+    .back{
+        width: 50%;
+    }
+}
