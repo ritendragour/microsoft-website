@@ -107,6 +107,7 @@ nav ul li {
 .laptop-section{
     margin: 0px 60px;
     display: flex;
+    flex-wrap: wrap;
 }
 .img_path_loptop{
     display: flex;
